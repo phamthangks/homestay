@@ -28,7 +28,7 @@
     }
 
     .footer .box-container .box-1 {
-        flex-basis: 80%;
+        flex-basis: 80% !important;
     }
     
     video {
