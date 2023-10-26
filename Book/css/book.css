@@ -1,0 +1,220 @@
+/* book */
+  * {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    body{
+      margin: 0;
+    }
+
+    .tittle{
+      padding-top: 105px;
+      text-align: center;
+      font-size: 40px;
+      font-family: Arial, Helvetica, sans-serif;
+      padding-bottom: 20px   ;
+      
+    }
+    .tittle span{
+        color: #ffa500;
+        background-color: #FFA50033;
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+  
+    .btn{
+      display: inline-block;
+      margin-top: 10px;
+      background:#ffa500;
+      color:#fff;
+      text-transform: capitalize;
+      padding:8px 10px;
+      border:2px solid #ffa500;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 17px;
+    }
+    
+    .btn:hover{
+      background:rgba(255, 165, 0,.2);
+      color:#ffa500;
+    }
+  
+    .book .row{
+      flex-wrap: wrap;
+      align-items: center;
+      padding:10px 10px;
+    }
+    
+    .book .image{
+      z-index: -1;
+    }
+  
+    .book .row form{
+      padding:20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,.1);
+      border: 2px solid #ffa500;
+      border-radius: 20px;
+    }
+    
+    .book .row form .inputBox{
+      padding:5px 15px 5px 0px;
+      flex-wrap: wrap;
+      height: 95px;
+      font-size: 15px;
+      color:#333;
+    }
+    
+    .book .row form .inputBox input{
+      width:100%;
+      margin:10px 0;
+      padding:10px;
+      font-size: 15px;
+      text-transform: none;
+    }
+  
+    /* responsive */
+  
+    img{
+      max-width: 540px;
+      max-height: 540px;
+      margin-top: 30px;
+    }
+   
+    .grid-container {
+      display: grid;
+      padding:0px 50px;
+      grid-template-columns: repeat(9,1fr);
+      grid-template-areas: 
+        'head head head head head head head head head' 
+        'left left left left right right right right right' 
+        'foot foot foot foot foot foot foot foot foot';
+      grid-column-gap: 10px;
+    } 
+    .head {
+      grid-area: head;
+      text-align: center;
+      padding: 120px 0 30px;
+    }
+  
+    .left {
+      grid-area: left;
+      padding:0px 20px;
+    }
+    .right {
+      grid-area: right;
+      margin: 0px !important;
+    } 
+    .foot {
+      grid-area: foot;
+      padding: 10px;
+      text-align: center;
+    }
+  
+    .responsive {
+      width: 100%;
+      height: auto;
+      object-position: center;
+    }
+    
+    footer{
+      font-size: 20px;
+      text-transform: none;
+    }
+  
+  @media (max-width: 1100px) {
+      .grid-container  {
+        font-size: 15px !important;
+        padding:0px 30px !important;
+        grid-template-areas: 
+        'head head head head head head head head head' 
+        'left left left left left right right right right'  
+        'foot foot foot foot foot foot foot foot foot';
+      }
+  }
+  
+  @media (max-width: 760px) {
+      .grid-container  {
+        font-size: 15px !important;
+        padding:0px 30px !important;
+        grid-template-areas: 
+        'head head head head head head head head head' 
+        'left left left left left left left left left'  
+        'right right right right right right right right right'  
+        'foot foot foot foot foot foot foot foot foot';
+      }
+  }
+  
+  /* footer */
+  .footer {
+    background:#333;
+    padding: 20px;
+  }
+  
+  .footer .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-transform: capitalize;
+  }
+  
+  .footer .box-container .box-1 {
+    flex-basis: 50%;
+  }
+  
+  .footer .box-container .box {
+    padding: 25px 0;
+  }
+  
+  .footer .box-container .box h3 {
+    color: #fff;
+    font-size: 24px;
+    padding: 4px 0px;
+  }
+  
+  .footer .box-container .box p {
+    color: #eee;
+    font-size: 14px;
+    padding: 4px 20px 4px 0;
+    line-height: 30px;
+  
+  }
+  
+  .footer .box-container .icon-book-container {
+    color: #eee;
+    line-height: 43px;
+    display: flex;
+  }
+  
+  .footer .box-container .icon-book-container:hover {
+    color: #ffa500;
+  }
+  
+  .footer .icon-book-container .icon-book-items {
+    line-height: 41.5px;
+    padding-right: 10px;
+  }
+  
+  .footer .box-container ul {
+    padding: initial;
+  }
+  
+  .footer .box-container ul li {
+    color: #eee;
+    font-size: 14px;
+    list-style: none;
+    padding: 10px 0px;
+  }
+  
+  .footer .box-container .box a {
+    color: #eee;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+  }
+  

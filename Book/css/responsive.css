@@ -1,0 +1,37 @@
+@media (max-width:940px) {
+    #menu-bar {
+        display: initial !important;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #333;
+        border-top: 1px solid #6d6767;
+        padding: 10px 14px;
+        display: none; /* Bắt đầu ẩn thanh menu */
+    }
+
+    header .navbar a {
+        display: block;
+        width: 100%;
+        background-color: #000;
+        padding: 13px;
+        margin: 6px;
+        border-radius: 7px;
+    }
+
+    .login-form-container form {
+        min-width: 80%;
+    }
+
+    .footer .box-container .box-1 {
+        flex-basis: 80%;
+    }
+    
+    video {
+        height: 500px;
+    }
+}

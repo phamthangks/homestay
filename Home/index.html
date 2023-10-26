@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Latest compiled and minified CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- jQuery library -->
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+	
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
+    <link rel="icon" type="image/png" href="./assets/img/logo.png" >
+</head>
+    
+<body>
+
+
+    <!-- Header section -->
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="../Home/index.html" class="logo"><span>H</span>omestay</a>
+        
+        <nav class="navbar">
+            <a href="../Home/index.html" style="color: #ffa500;">home</a>
+            <a href="../Book/book.html">book</a>
+            <a href="../Packages/package/packages.html">packages</a>
+            <a href="../Voucher/voucher.html">voucher</a>
+            <a href="../Review/review.html">review</a>
+            <a href="../Contact/contact1.html">contact</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+    </header>
+<!-- End Header section -->
+
+<!-- login form container  -->
+
+<div class="login-form-container ">
+    <!-- active-login -->
+
+    <i class="fas fa-times" id="form-close"></i>
+
+    <form action="">
+        <h3>login</h3>
+        <input type="email" class="box" placeholder="enter your email">
+        <input type="password" class="box" placeholder="enter your password">
+        <input type="submit" value="login now" class="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">remember me</label>
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have and account? <a href="#">register now</a></p>
+    </form>
+
+</div>
+
+<div class="search-bar-container">
+    <form action="">
+        <input type="search" id="search-bar" placeholder="Location...">
+        <input type="date" id="search-bar" placeholder="Date to that location...">
+        <input type="number" id="search-bar" placeholder="Number of people...">
+        <input type="number" id="search-bar" placeholder="Price...">
+        <input type="submit" value="Search" class="btn">
+    </form>
+</div>
+
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Interesting experiment</h3>
+        <p>Discover great experiences with us </p>
+        <a href="../Packages/package/packages.html" class="btn">discover more</a>
+    </div>
+
+    <div class="controls">
+        <span class="vid-btn active-btn" src="./assets/img/slide_video_1.mp4"></span>
+        <span class="vid-btn" src="./assets/img/slide_video_2.mp4"></span>
+        <span class="vid-btn" src="./assets/img/slide_video_3.mp4"></span>
+        <span class="vid-btn" src="./assets/img/slide_video_4.mp4"></span>
+        <span class="vid-btn" src="./assets/img/slide_video_5.mp4"></span>
+    </div>
+
+    <div class="video-container">
+        <video src="./assets/img/slide_video_1.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- preferential section starts -->
+<div class="pre-sec">
+    <div class="pre-content">
+        <h1 class="heading">
+            <span>s</span>
+            <span>p</span>
+            <span>e</span>
+            <span>c</span>
+            <span>i</span>
+            <span>a</span>
+            <span>l</span>
+        </h1>
+    </div>
+
+    <div class="pre-page">
+        <ul class="pre-page-container">
+            <li class="pre-page-iteam">
+                <div class="pre-page-content">
+                    <h2>Discount</h2>
+                    <p>No minimum amount required.</p>
+                    <!-- <button class="btn"styles>More</button> -->
+                    <a href="../Voucher/voucher.html" class="btn" style="list-style-type: none;">More</a>
+                </div>
+                <div class="pre-picture">
+                    <img src="./assets/img/pmc-3pct-web.png" alt="">
+                </div>
+            </li>
+            <li class="pre-page-iteam">
+                <div class="pre-page-content">
+                    <h2>Discount</h2>
+                    <p>Spending at least 200$</p>
+                    <!-- <button class="btn">Get Code</button> -->
+                    <a href="../Voucher/voucher.html" class="btn" style="list-style-type: none;">More</a>
+                </div>
+                <div class="pre-picture">
+                    <img src="./assets/img/pmc-6pct-web-2.png" alt="">
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</div>
+<!-- preferential section ends -->
+
+<!-- Outstanding location section starts -->
+<h1 class="heading">
+    <span>l</span>
+    <span>o</span>
+    <span>c</span>
+    <span>a</span>
+    <span>t</span>
+    <span>i</span>
+    <span>o</span>
+    <span>n</span>
+</h1>
+<div class="outs-loc">
+    <div class="customNav-container">
+            <i class="fas fa-chevron-left"></i>
+            <i class="fas fa-chevron-right"></i>
+    </div>
+   
+    
+    <div id="outs-slide-container">
+        <div class="outs-slide-item">
+            <a href="" class="outs-item">
+                <img src="./assets/img/hochiminh.png" alt="">
+                <h4 class="title">Ho Chi Minh City</h4>
+            </a>
+        </div>
+        <div class="outs-slide-item">
+            <a href="" class="outs-item">
+                <img src="./assets/img/vung-tau.png" alt="">
+                <h4 class="title">Vung Tau</h4>
+            </a>
+        </div>
+        <div class="outs-slide-item">
+            <a href="" class="outs-item">
+                <img src="./assets/img/danang.jpg" alt="">
+                <h4 class="title">Da Nang</h4>
+            </a>
+        </div>
+        <div class="outs-slide-item">
+            <a href="" class="outs-item">
+                <img src="./assets/img/da-lat.png" alt="">
+                <h4 class="title">Da Lat</h4>
+            </a>
+        </div>
+        <div class="outs-slide-item">
+            <a href="" class="outs-item">
+                <img src="./assets/img/hanoi.png" alt="">
+                <h4 class="title">Ha Noi</h4>
+            </a>
+        </div>
+        <div class="outs-slide-item">
+            <a href="" class="outs-item">
+                <img src="./assets/img/nha-trang.png" alt="">
+                <h4 class="title">Nha Trang</h4>
+            </a>
+        </div>
+        <div class="outs-slide-item">
+            <a href="" class="outs-item">
+                <img src="./assets/img/phu-quoc.png" alt="">
+                <h4 class="title">Phu Quoc</h4>
+            </a>
+        </div>
+        <div class="outs-slide-item">
+            <a href="" class="outs-item">
+                <img src="./assets/img/hoi-an.png" alt="">
+                <h4 class="title">Hoi An</h4>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Beautiful Homestay section starts -->
+<div class="beau-container">
+
+    <h1 class="heading">
+        <span>h</span>
+        <span>o</span>
+        <span>t</span>
+        <span>d</span>
+        <span>e</span>
+        <span>a</span>
+        <span>l</span>
+    </h1>
+    
+        <div class="beau-box-container">
+    
+            <div class="beau-box">
+                <img src="./assets/img/phong_dalat.jpg" alt="">
+                <div class="beau-content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Da Lat </h3>
+                    <p>Located in Da Lat in the Lam Dong region with Bao Dai's Summer Palace nearby, Naps TEEPEE homestay provides</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="beau-price"> $32.00 <span>$52.00</span> </div>
+                    <a href="../PACKAGES/packages2/packages2.html" class="btn">See Detail</a>
+                </div>
+            </div>
+    
+            <div class="beau-box">
+                <img src="./assets/img/phong_danang.jpg" alt="">
+                <div class="beau-content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Da Nang </h3>
+                    <p>Conveniently located in Da Nang, ChiPa Home offers air-conditioned rooms with free WiFi, free parking and room service.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="beau-price"> $67.00 <span>$43.00</span> </div>
+                    <a href="../PACKAGES/packages3/packages3.html" class="btn">See Detail</a>
+                </div>
+            </div>
+    
+            <div class="beau-box">
+                <img src="./assets/img/phong_hcm.jpg" alt="">
+                <div class="beau-content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> TP. HCM </h3>
+                    <p>Located in Ho Chi Minh City, 1.5 km from War Remnants Museum and 1 km from the centre, Leiden Homestay&Cafe' offers</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="beau-price"> $90.00 <span>$120.00</span> </div>
+                    <a href="../PACKAGES/packages6/packages6.html" class="btn">See Detail</a>
+                </div>
+            </div>
+    
+        </div>
+
+</div>
+
+<!-- Beautiful Homestay section ends -->
+
+<!-- services section starts  -->
+
+<section class="services" id="services">
+
+    <h1 class="heading">
+        <span>s</span>
+        <span>e</span>
+        <span>r</span>
+        <span>v</span>
+        <span>i</span>
+        <span>c</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+
+    <div class="ser-box-container">
+
+        <a href="../Contact/contact1.html">
+            <div class="ser-box">
+                <i class="fas fa-hotel"></i>
+                <h3>affordable hotels</h3>
+                <p>If you need to receive and check out hours, please contact 098x.xxx.xxx phone number for the best support</p>
+            </div>
+        </a>
+        <a href="../Contact/contact1.html">
+            <div class="ser-box">
+                <i class="fas fa-utensils"></i>
+                <h3>food and drinks</h3>
+                <p>If you need to receive and check out hours, please contact 098x.xxx.xxx phone number for the best support</p>
+            </div>
+        </a>
+        <a href="../Contact/contact1.html">
+            <div class="ser-box">
+                <i class="fas fa-bullhorn"></i>
+                <h3>safty guide</h3>
+                <p>If you need to receive and check out hours, please contact 098x.xxx.xxx phone number for the best support</p>
+            </div>
+        </a>
+        <a href="../Contact/contact1.html">
+            <div class="ser-box">
+                <i class="fas fa-globe-asia"></i>
+                <h3>around the world</h3>
+                <p>If you need to receive and check out hours, please contact 098x.xxx.xxx phone number for the best support</p>
+            </div>
+        </a>
+        <a href="../Contact/contact1.html">
+            <div class="ser-box">
+                <i class="fas fa-plane"></i>
+                <h3>fastest travel</h3>
+                <p>If you need to receive and check out hours, please contact 098x.xxx.xxx phone number for the best support</p>
+            </div>
+        </a>
+        <a href="../Contact/contact1.html">
+            <div class="ser-box">
+                <i class="fas fa-hiking"></i>
+                <h3>adventures</h3>
+                <p>If you need to receive and check out hours, please contact 098x.xxx.xxx phone number for the best support</p>
+            </div>
+        </a>
+
+    </div>
+
+</section>
+
+<!-- services section ends -->
+
+
+
+
+<!-- Footer section -->
+<section class="footer">
+    <div class="box-container">
+        <div class="box box-1">
+            <h3>about us</h3>
+            <p>The platform is dedicated to simplifying the process of discovering and booking homestays, offering users a bespoke experience. Seamlessly navigate through a diverse range of options, ensuring a perfect fit for your accommodation needs. Find, explore, and reserve homestays effortlessly, making your travel experience truly personalized and memorable.</p>
+        </div>
+        <div class="box">
+            <h3>members</h3>
+            <ul>
+                <li>Phạm Quyết Thắng</li>
+                <li>Nguyễn Thị Huyền Trang</li>
+                <li>Lê Sỹ Khánh</li>
+                <li>Nguyễn Văn Thắng</li>
+            </ul>
+        </div>
+        <div class="box">
+            <h3>follow us</h3>
+            <div class="icon-contact-container">
+                <i class="icon-contact-items fab fa-facebook"></i>
+                <a href="#">facebook</a>
+            </div>
+            <div class="icon-contact-container">
+                <i class="icon-contact-items fab fa-instagram"></i>
+                <a href="#">instagram</a>
+            </div>
+            <div class="icon-contact-container">
+                <i class="icon-contact-items fas fa-rainbow"></i>
+                <a href="#">zalo</a>
+            </div>
+            <div class="icon-contact-container">
+                <i class="icon-contact-items fab fa-twitter-square"></i>
+                <a href="#">twitter</a>
+            </div>
+    
+        </div>
+    </div>
+</section>
+<!-- End Footer section -->
+
+<script src="./main.js"></script>
+
+</body>
+</html>
